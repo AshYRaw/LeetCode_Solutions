@@ -1,11 +1,12 @@
 //Sliding window approach for Finding len of longest non-repeating Sub String 
+
 int max(int a, int b){
   int max_val = (a>b) ? a:b;
   return max_val;
 }
 
 int lengthOfLongestSubstring(char* s) {
-  char chars[256] = {0};
+  int chars[256] = {0};
 
   int right = 0;
   int left = 0;
